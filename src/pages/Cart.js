@@ -27,8 +27,9 @@ function Cart() {
             <h1>Checkout</h1>
             {cartItemElements}
             <p className="total-cost">Total:{totalCostDisplay}</p>
-            {cartItems.length > 0 &&  <div className="order-button">
-            	<button onClick={placeOrder}>{buttonText}</button>
+            {cartItems.length > 0 ?  <div className="order-button">
+            	<button onClick={placeOrder}>{buttonText}</button></div> : 
+            	<div>You have no items in your cart.
             </div>}
            
         </main>
