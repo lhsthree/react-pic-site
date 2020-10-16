@@ -1,10 +1,16 @@
-import React from 'react';
+import React from "react"
+import Header from "./components/Header"
+import Cart from "./pages/Cart"
+import Photos from "./pages/Photos"
+import "./styles.css"
 
-
-function App() {
-  return (
-    <h1>Hello</h1>
+function App() {    
+    return (
+        <div>
+            <Header />
+            <h1>Home Page</h1>
+        </div>
     )
 }
 
-export default App;
+export default App
